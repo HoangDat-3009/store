@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Samsung Store</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="./images/Favicon.png">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="bootstrap-3.3.7-dist/js/jquery-3.2.1.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+	<style>
+		:root{
+			--background-color-vernav: #222;
+		}
+		body{
+			background-color: #CDC9C9;
+		}
+		.jumbotron {
+			background-image: linear-gradient(to bottom, #C0B5F7,#FFC0CB, #FFFAFA);
+			margin-bottom: 0;
+		}
+
+		.header {
+			color: #5A0606;
+		}
+
+		.navbar {
+			border-radius: 0;
+			margin-bottom: 0;
+			position: sticky;
+			position: -webkit-sticky;
+			top: 0;
+			z-index: 1;
+		}
+
+		.vernav {
+			background-color: var(--background-color-vernav);
+			/* z-index: 0; */
+			position: sticky;
+			position: -webkit-sticky;
+			top: 52px;
+		}
+
+		.navbar-brand:hover,
+		.nav>li>a:hover {
+			cursor: pointer;
+			transform: scale(1.08);
+		}
+
+		.vernav div {
+			background-color: var(--background-color-vernav);
+			border: none;
+		}
+
+		.vernav ul {
+			float: none;
+		}
+
+		.vernav li {
+			float: none;
+		}
+		#home>p{
+			text-align: justify;
+		}
+		.container {
+			background-image: linear-gradient(to bottom, #c6e2ff, #E1C5C5, #F5DEB3, #fff);
+			/* margin-top: 20px; */
+		}
+		.main{
+			margin-top: 20px;
+		}
+		.panel-body img {
+			max-height: 87px;
+		}
+
+		.img-responsive {
+			width: auto;
+			height: 100%;
+		}
+
+		.item img {
+			width: 100%;
+			max-height: 500px;
+		}
+
+		.row {
+			padding-bottom: 50px;
+		}
+
+		.col-sm-4:hover {
+			transform: scale(1.06);
+			cursor: pointer;
+		}
+		.border0{
+			border-radius: 10px;
+		}
+		.compare-ss{
+			margin-top: 60px;
+		}
+		.navbar-brand img{
+			/* position: absolute;
+			top: 50%;
+			transform: translateY(-50%); */
+			display: flex;
+			align-items: center;
+			max-height: 100%;
+			/* width: 100px; */
+			/* background-origin: padding-box; */
+			transform: scale(1.5);
+		}
+		.navbar-brand img:hover {
+			transform: scale(1.51);
+		}
+		/* .footer{
+			padding: 20px 0;
+			font-size: 15px;
+		} */
+	</style>
+</head>
+
+<body>
+	<div class="header jumbotron text-center text-capitalize">
+		<h1>Samsung store</h1>
+		<p>Shopping every time every where</p>
+	</div>
+	<div class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="navbar-brand"><img src="./images/samsung_logo.png"  alt=""></div>
+			</div>
+
+			<div class="collapse navbar-collapse" id="mynav">
+				<ul class="nav navbar-nav">
+					<li><a href="">Home</a></li>
+					<li><a href="">Product</a></li>
+					<li><a href="" class="dropdown-toggle" data-toggle="dropdown">Download <span
+								class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="">Windows</a></li>
+							<li><a href="">Linux</a></li>
+							<li><a href="">MacOS</a></li>
+						</ul>
+					</li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">Help</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href=""><span class="glyphicon glyphicon-user"></span> Your account</a></li>
+					<li><a href=""><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container border0">
+		<div class="row">
+			<div class="vernav col-sm-3 col-xs-5 border0">
+				<div class="navbar navbar-inverse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Samsung Galaxy S series</a></li>
+						<li><a href="#">Samsung Galaxy Tab</a></li>
+						<li><a href="#">Samsung Galaxy A,M Series</a></li>
+						<li><a href="#">Samsung Galaxy Note</a></li>
+						<li><a href="#">Smart TV</a></li>
+						<li><a href="#">Galaxy Buds</a></li>
+						<li><a href="#">Galaxy Watch</a></li>
+						<li><a href="#">Displays</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main col-sm-9 col-xs-7">
+
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner border0">
+						<div class="item active">
+							<img src="./images/galaxy_s23ultra.jpg" alt="Los Angeles">
+						</div>
+
+						<div class="item">
+							<img src="./images/Samsung-Galaxy-S23-Series.png" alt="Chicago">
+						</div>
+
+						<div class="item">
+							<img src="./images/samsung-galaxy-s23-ultra-1-800x445.jpg" alt="New York">
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+
+				<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+					<li><a data-toggle="tab" href="#menu1">Security</a></li>
+					<li><a data-toggle="tab" href="#menu2">Galaxy S23 Ultra Trailer</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div id="home" class="tab-pane fade in active">
+						<h3>HOME</h3>
+						<p>Samsung Electronics today announced the global availability of its industry-leading Galaxy S23 smartphones following impressive pre-order results.</p>
+						<p>Led by the Galaxy S23 Ultra with its new 200MP Adaptive Pixel sensor and iconic embedded S Pen, the Galaxy S23 series — also featuring the Galaxy S23+ and Galaxy S23 — represents a new era of Samsung’s ultimate premium phone experience. The Galaxy S23 series features epic cameras that give users more freedom to explore their creativity, the world’s fastest mobile graphics1 thanks to the Snapdragon® 8 Gen 2 Mobile Platform for Galaxy, and a striking design that advances the company’s sustainability commitments with more components made using recycled materials than in any other Samsung Galaxy smartphone.</p>
+					</div>
+					<div id="menu1" class="tab-pane fade">
+						<h3>Security</h3>
+						<p> Samsung Galaxy S23 series also unlocks the next level of mobile security with Samsung Message Guard. This powerful sandboxing tool preemptively protects against zero-click exploit attacks. This is a new kind of cyberattack where just receiving an image can compromise a device — even without the user’s interaction. Samsung Message Guard acts as a virtual quarantine, trapping harmful images and ensuring you receive safe images.</p>
+					</div>
+					<div id="menu2" class="tab-pane fade">
+						<h3>Samsung Galaxy S23 Ultra Trailer</h3>
+						<iframe width="100%" height="400px" src="https://www.youtube.com/embed/iLwsPnywFc0?si=2qdcWYAEDT7kJZtW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+				<h3 class="compare-ss">Compare Samsung S series</h3>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<td>Name</td>
+							<td>Year</td>
+							<td>Chip</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>S21 series</td>
+							<td>2021</td>
+							<td>Snapdragon 888 5G (5nm) or Exynos 2100(5nm)</td>
+						</tr>
+						<tr>
+							<td>S22 series</td>
+							<td>2022</td>
+							<td>Snapdragon 8 Gen 1(4nm) or Exynos 2200(4nm)</td>
+						</tr>
+						<tr>
+							<td>S23 series</td>
+							<td>2023</td>
+							<td>Snapdragon 8 Gen 2(4nm) </td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="col-sm-4 col-xs-10">
+					<div class="panel panel-default">
+						<div class="panel-heading">Samsung S23/S23+</div>
+						<div class="panel-body"><img class="img-responsive" src="images/s23+.jpg" alt=""></div>
+						<div class="panel-footer">$699.99</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-10">
+					<div class="panel panel-default">
+						<div class="panel-heading">Samsung S23 Ultra</div>
+						<div class="panel-body"><img class="img-responsive" src="images/Samsung-S23-ultra-den-500x500.png" alt=""></div>
+						<div class="panel-footer">$1,199.99</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-4 col-xs-10">
+					<div class="panel panel-default">
+						<div class="panel-heading">Samsung S22/S22+</div>
+						<div class="panel-body"><img class="img-responsive" src="images/Samsung-s22_xanh-500x500.png" alt=""></div>
+						<div class="panel-footer">$519.00</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-10">
+					<div class="panel panel-default">
+						<div class="panel-heading">Samsung S22 Ultra</div>
+						<div class="panel-body"><img class="img-responsive" src="images/s22-ultra.png" alt=""></div>
+						<div class="panel-footer">$1,049.99</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-10">
+					<div class="panel panel-default">
+						<div class="panel-heading">Samsung S21/S21+</div>
+						<div class="panel-body"><img class="img-responsive" src="images/s21.png" alt=""></div>
+						<div class="panel-footer">$479.00</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-10">
+					<div class="panel panel-default">
+						<div class="panel-heading">Samsung S21-Ultra</div>
+						<div class="panel-body"><img class="img-responsive" src="images/s21-ultra.png" alt=""></div>
+						<div class="panel-footer">$579.00</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-4 col-xs-10">
+					<div class="panel panel-default">
+						<div class="panel-heading">Samsung Galaxy Z Flip 5</div>
+						<div class="panel-body"><img class="img-responsive" src="images/zflip5-Purrple.png" alt=""></div>
+						<div class="panel-footer">$999.99</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-10">
+					<div class="panel panel-default">
+						<div class="panel-heading">Samsung Galaxy Z Fold 5</div>
+						<div class="panel-body"><img class="img-responsive" src="images/zfold5.png" alt=""></div>
+						<div class="panel-footer">$1,320.00</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-10">
+					<div class="panel panel-default">
+						<div class="panel-heading">Samsung Galaxy Buds 2</div>
+						<div class="panel-body"><img class="img-responsive" src="images/Samsung_Galaxy_Buds2.png" alt=""></div>
+						<div class="panel-footer">$109.99</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-xs-10">
+					<div class="panel panel-default">
+						<div class="panel-heading">Samsung Galaxy Tab S9 Plus</div>
+						<div class="panel-body"><img class="img-responsive" src="images/galaxy-tab-s9-plus.png" alt=""></div>
+						<div class="panel-footer">$799.99</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-10">
+					<div class="panel panel-default">
+						<div class="panel-heading">Samsung Galaxy Watch 6</div>
+						<div class="panel-body"><img class="img-responsive" src="images/galaxy_watch6.png" alt=""></div>
+						<div class="panel-footer">$299.99</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-10">
+					<div class="panel panel-default">
+						<div class="panel-heading">98" Class Samsung Neo QLED 8K </div>
+						<div class="panel-body"><img class="img-responsive" src="images/Neo_qled_8k.png" alt=""></div>
+						<div class="panel-footer">$39,999.99</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- <div class="footer text-center text-capitalize">&copy;Copy by Nguyen Hoang Dat</div> -->
+	</div>
+
+</body>
+
+</html>
